@@ -70,6 +70,9 @@ border-bottom: 1px solid #e7e9fc;
 .header-info .info-link:hover, .header-info .info-link:focus{
     color: #404bbf;
 }
+.studio{
+
+}
 .address{
     font-style: normal;
     margin-left: auto;
@@ -269,6 +272,9 @@ padding: 32px 0px;
     justify-content: center;
     fill: white;
 }
+.icon-link:hover{
+    background-color: #404bbf;
+}
 
 .our-portfolio-head{
     font-weight: 700;
@@ -325,12 +331,45 @@ padding: 32px 0px;
     letter-spacing: 0.02em;
     color: #434455;
 }
+.overlay-text{
+    position: absolute;
+    top: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    background-color: #4d5ae5;
+    width: 360px;
+    height: 300px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 40px;
+    padding-bottom: 164px;
+    transform: translateY(100%);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    }
+.overlay-portfolio{
+    position: relative;
+    overflow: hidden;
+}
+.our-portfolio-item:hover .overlay-text{
+    transform: translateY(0);
+}
 .footer{
     background-color: #2e2f42;
     padding: 100px 0;
 }
-
-
+.footer-wrap{
+    display: flex;
+    justify-items: flex-start;
+    flex-direction: row;
+    align-items: baseline;
+}
+.container-footer{
+    margin-right: 120px;
+}
 .footer-logo{
     text-decoration: none;
     font-family: "Raleway", sans-serif;
@@ -340,8 +379,8 @@ padding: 32px 0px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    display: inline-block;
     margin-bottom: 16px;
+    display: inline-block;
     
 }
 .footer-logo-studio{
@@ -354,4 +393,42 @@ padding: 32px 0px;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
+}
+.social-media-head{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+.social-media{
+ 
+}
+.footer-icon-list{
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    list-style: none;
+    justify-content: center;
+    padding-left: 0;
+}
+.footer-icon-item{
+    width: 40px;
+    height: 40px;
+}
+.footer-icon-link{
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icon{
+    fill: white;
+}
+.footer-icon-link:hover{
+    background-color: #31d0aa;
 }
